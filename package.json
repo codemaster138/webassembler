@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/codemaster138/webassembler/issues"
   },
-  "homepage": "https://github.com/codemaster138/webassembler#readme"
+  "homepage": "https://github.com/codemaster138/webassembler#readme",
+  "dependencies": {
+    "html-format": "^1.0.1",
+    "showdown": "^1.9.1"
+  }
 }
