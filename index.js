@@ -38,6 +38,7 @@ function evaluate(t, i, f) {
     let n = t.substr(3, t.length - 4);
     let _i = parseInt(n);
     if (_i >= i.length) throw `Input index out of range in ${f}: ${_i}`;
+    console.log('inserting input', _i);
     return i[_i];
 }
 
