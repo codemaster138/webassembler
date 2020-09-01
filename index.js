@@ -47,7 +47,8 @@ function evaluate(t, i, f) {
  * @param {Function} callback Called after every item
  */
 function dirWalk(path, callback) {
-    walk(path).forEach(el => callback(el));
+    let elements = walk(path);
+    elements.forEach(el => callback(el, elements));
 }
 
 /**
