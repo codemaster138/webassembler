@@ -38,7 +38,6 @@ function evaluate(t, i, f) {
     let n = t.substr(3, t.length - 4);
     let _i = parseInt(n);
     if (_i >= i.length) throw `Input index out of range in ${f}: ${_i}`;
-    console.log('inserting input', _i);
     return i[_i];
 }
 
@@ -59,7 +58,7 @@ function dirWalk(path, callback) {
  */
 function buildFromHTMLtemplate(path, ...inputs) {
     let template = fs.readFileSync(path).toString();
-    let built = template.replace(/<%=[0-9]+%>/, t => evaluate(t, inputs, path));
+    let built = template.replace(/<%=[0-9]+%>/gim, t => evaluate(t, inputs, path));
     built = formatHTML(built);
     return built;
 }

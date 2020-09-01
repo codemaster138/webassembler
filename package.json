@@ -1,6 +1,6 @@
 {
   "name": "webassembler",
-  "version": "1.0.2-alpha",
+  "version": "1.0.3",
   "description": "A simple static site generator",
   "main": "index.js",
   "scripts": {
